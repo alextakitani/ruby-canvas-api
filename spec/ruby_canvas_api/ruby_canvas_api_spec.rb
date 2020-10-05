@@ -1,6 +1,6 @@
-RSpec.describe Ruby::Canvas::Api do
+RSpec.describe RubyCanvasApi do
   it "has a version number" do
-    expect(Ruby::Canvas::Api::VERSION).not_to be nil
+    expect(RubyCanvasApi::VERSION).not_to be nil
   end
 
   it "does something useful" do

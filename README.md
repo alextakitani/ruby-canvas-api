@@ -22,7 +22,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add this to an intitializer
+```ruby
+RubyCanvasApi.configure do |c|
+  c.token = 'xxxxxx'
+  c.api_url = 'xxxx'
+end
 
 ## Development
 
@@ -33,4 +38,3 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/ruby-canvas-api.
-

@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "ruby/canvas/api"
+require "ruby_canvas_api"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
