@@ -7,6 +7,7 @@ require "ruby_canvas_api/configuration"
 require "ruby_canvas_api/connection"
 require "ruby_canvas_api/base"
 require "ruby_canvas_api/user"
+require "ruby_canvas_api/login"
 module RubyCanvasApi
   class UserNotFound < StandardError; end
 
