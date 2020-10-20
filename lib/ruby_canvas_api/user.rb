@@ -13,7 +13,13 @@ module RubyCanvasApi
 
     def self.find(id)
       resp = connection.get("v1/users/#{id}")
-      raise UserNotFound if resp.body.errors.any?
+      raise UserNotFound if resp.body.errors && resp.body.errors.any?
+      resp.body
+    end
+
+    def self.activity_stream(id)
+      resp = connection.get("v1/users/#{id}/activity_stream")
+      raise NotFound if resp.body.errors && resp.body.errors.any?
       resp.body
     end
   end

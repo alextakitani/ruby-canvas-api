@@ -8,6 +8,7 @@ require "ruby_canvas_api/connection"
 require "ruby_canvas_api/base"
 require "ruby_canvas_api/user"
 require "ruby_canvas_api/login"
+require "ruby_jard"
 module RubyCanvasApi
   class UserNotFound < StandardError; end
 
@@ -19,5 +20,4 @@ module RubyCanvasApi
     self.configuration ||= Configuration.new
     yield(configuration)
   end
-
 end
