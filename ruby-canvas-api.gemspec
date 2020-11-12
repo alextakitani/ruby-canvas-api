@@ -17,11 +17,12 @@ Gem::Specification.new do |spec|
   spec.metadata["source_code_uri"] = "https://github.com/alextakitani/ruby-canvas-api"
   spec.metadata["changelog_uri"] = "https://github.com/alextakitani/ruby-canvas-api/blob/master/CHANGELOG.md"
 
+  spec.add_development_dependency "awesome_print"
+  spec.add_development_dependency "dotenv"
   spec.add_development_dependency "guard"
   spec.add_development_dependency "guard-rspec"
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "ruby_jard"
-  spec.add_development_dependency "dotenv"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

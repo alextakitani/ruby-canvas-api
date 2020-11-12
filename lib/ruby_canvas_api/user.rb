@@ -12,8 +12,9 @@ module RubyCanvasApi
     end
 
     def self.find(id)
-      resp = connection.get("v1/users/#{id}")
-      raise UserNotFound if resp.body.errors && resp.body.errors.any?
+      resp = connection.get("v1/users/#{id}", {'include[]': 'last_login'})
+      jard
+      raise UserNotFound if resp&.body&.errors&.any?
       resp.body
     end
 
